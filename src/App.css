@@ -1,42 +1,55 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.hangmanLogo {
+  height: 150px;
+  padding: 10px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.Keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid red;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px 0 5px 0;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard-letter {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0px 3px 0 3px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.keyboard-letter:hover {
+  background-color: rgb(247 153 64);
+  color: rgb(124 84 39);
 }
-
-.card {
-  padding: 2em;
+.blank-letter-roww {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid gold;
 }
-
-.read-the-docs {
-  color: #888;
+.blank-letter-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid rebeccapurple;
+}
+.blank-letter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid red;
 }
